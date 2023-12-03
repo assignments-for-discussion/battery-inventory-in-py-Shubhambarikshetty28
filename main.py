@@ -3,9 +3,9 @@ def count_batteries_by_health(present_capacities):
   count=count1=count2=0
   for i in present_capacities:
          Soh=(100*present_capacities(i))/rated_capacity
-         if Soh>=80 && Soh<=100:
+         if Soh>=80 and Soh<=100:
                count=count+1
-         if Soh<80 && Soh>=62:
+         if Soh<80 and Soh>=62:
                count1=count1+1
          if Soh<62:
                count2=count2+1
